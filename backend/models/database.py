@@ -20,8 +20,8 @@ def get_db():
 def initialize_database():
     if not os.path.exists(config.DATABASE_URL):
         logging.info("Creating data directory")
-        if not os.path.exists(config.DATBASE_DIR):
-            os.makedirs(config.DATBASE_DIR)
+        if not os.path.exists(config.DATABASE_DIR):
+            os.makedirs(config.DATABASE_DIR)
 
         logging.debug("Database does not exist. Creating database..")
 
